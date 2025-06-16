@@ -1,0 +1,21 @@
+.separs_info {
+    display:flex;
+    width:100%;
+    flex-direction: column;
+    gap:25px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.separ_mini {
+    height: 6px;
+    width:507px;
+    object-fit: cover;
+}
+
+.separ_max {
+    height: 8px;
+    width:1400px;
+    object-fit: cover;
+}

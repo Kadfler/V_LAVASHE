@@ -1,0 +1,36 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block_info {
+    display:flex;
+    gap:40px;
+    justify-content: center;
+max-width: 1400px;
+margin-bottom:40px;
+}
+
+.info_img {
+    border-radius: 70px;
+}
+
+.inf_textes {
+    display: flex;
+    flex-direction: column;
+}
+
+.inf_title {
+    font-size: 44px;
+    color: azure;
+    font-family:monospace;
+}
+
+.inf_text {
+   font-size: 24px;
+    color: azure;
+    font-family:monospace; 
+    max-width: 739px;
+}

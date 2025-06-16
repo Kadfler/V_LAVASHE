@@ -1,0 +1,12 @@
+@import "vendor/_reset.css";
+@import "vendor/_vars.css";
+@import "vendor/_fonts.css";
+@import "vendor/_global.css";
+@import "components/_header.css";
+@import "home/_info.css";
+@import "components/_separates.css";
+@import "home/_menu.css";
+@import "components/_tabs.css";
+@import "home/_feedback.css";
+@import "home/_adress.css";
+@import "components/_footer.css";
