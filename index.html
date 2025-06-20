@@ -50,10 +50,10 @@
       <div class="header_inner">
         <img class="logo" src="images/logo2.webp" width="200px" height="200px" style="object-fit: cover;">
         <ul class="header_nav">
-          <li class="header_link">Ассортимент</li>
-          <li class="header_link">Контакты</li>
-          <li class="header_link">Акции</li>
-          <li class="header_link">Отзывы</li>
+          <li><a class="header_link" href="#assort">Ассортимент</a></li>
+          <li><a class="header_link" href="#contacts">Контакты</a></li>
+          <li><a class="header_link" href="#actii">Акции</a></li>
+          <li><a class="header_link" href="#fedbck">Отзывы</a></li>
 
         </ul>
 
@@ -92,11 +92,11 @@
 
   </section>
 
-  <div class="separs_info">
+  <div class="separs_info" id="actii">
     <img class="separ_max" src="images/separ2.svg">
   </div>
 
-  <section class="menu">
+  <section class="menu" id="assort">
     <img class="banner_menu" src="images/ban3.webp" style="width: 1923px; height: 300px; margin-bottom: 40px;">
 
     <span class="title" style="margin-bottom: 40px;">Ассортимент</span>
@@ -130,8 +130,7 @@
   <p class="cookieHeading" id="modalHeading">БЛЮДА</p>
 
   <div class="food_cards" id="modalFoodCards">
-    <!-- Здесь будет динамически генерироваться содержимое -->
-    <!-- Пример одного foodCard (для структуры) -->
+
     <div class="foodCard">
       <picture class="imageContainer">
         <img class="menu_img" src="ches.webp" id="foodImg1">
@@ -209,7 +208,7 @@
 
   </section>
 
-  <div class="separs_info">
+  <div class="separs_info" id="fedbck">
     <img class="separ_max" src="images/separ2.svg" style="margin-top:40px">
   </div>
 
@@ -312,7 +311,7 @@
                 <p class="review-author">— Максим В.</p>
               </div>
             </li>
-            <!-- Дублируем для бесконечности -->
+            
             <li class="carousel-slide">
               <div class="review-block">
                 <p class="review-text">«Большая сочная шаурма, много мяса. Быстрое приготовление пищи, приятное
@@ -415,7 +414,7 @@
   </section>
 
   <section class="adress">
-    <span class="title" style="margin-top: 40px;">Выбрали что-нибудь?</span>
+    <span class="title" id="contacts" style="margin-top: 40px;">Выбрали что-нибудь?</span>
     <span class="title" style="margin-bottom: 40px;">Свяжитесь с нами!</span>
 
     <div class="adresses">
