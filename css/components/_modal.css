@@ -1,0 +1,229 @@
+.menu_card {
+    background-color: var(--light-blue);
+    max-width: 1000px;
+    width: 100%;
+    padding: 18px;
+    position: fixed;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    border-radius: 15px;
+    z-index: 3;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: visible;
+    pointer-events: none;
+    transition: opacity .4s, visibility .4s;
+  background-color: rgb(50, 50, 50);
+  flex-direction: column;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
+}
+
+.menu_card.active{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.cookieHeading {
+  font-size: 34px;
+  color: rgb(255, 248, 233);
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.acceptButton {
+padding: 20px 30px;
+  background-color: #ff8244;
+  transition-duration: .2s;
+  border: none;
+  color: rgb(241, 241, 241);
+  cursor: pointer;
+font-size: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px #f3847e, 0 2px 4px -1px #d85e5e;
+  transition: all .6s ease;
+}
+
+.declineButton {
+padding: 20px 30px;
+  background-color: #c35e5e;
+  transition-duration: .2s;
+  color: rgb(241, 241, 241);
+  border: none;
+  cursor: not-allowed;
+  font-size: 18px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px #9a2626, 0 2px 4px -1px #f82525;
+  transition: all .6s ease;
+}
+
+.declineButton:hover {
+  background-color: #ff2f2f;
+  box-shadow: 0 10px 15px -3px #ff5252, 0 4px 6px -2px #ff7676;
+  transition-duration: .2s;
+}
+
+.acceptButton:hover {
+  background-color: #ff7113;
+  box-shadow: 0 10px 15px -3px #feab2e, 0 4px 6px -2px #e0ff32;
+  transition-duration: .2s;
+}
+
+.foodCard {
+  height: 160px;
+  width: 180px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  position: relative;
+  outline: 2px solid rgb(48, 48, 48);
+  user-select: none;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.foodCard:hover {
+  background-color: rgb(255, 246, 176);
+}
+
+.imageContainer {
+  padding: 5px;
+  height: 60%;
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.imageContainer > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.foodTitle {
+  color: rgb(32, 32, 32);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  font-weight: 800;
+}
+
+.priceAndButton {
+  position: absolute;
+  bottom: 20px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.Price {
+  font-weight: 600;
+  padding-left: 5px;
+  color: rgb(0, 0, 0);
+  font-variant-numeric: tabular-nums;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.food_cards {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+
+}
+
+.menu_img {
+  width: 139px;
+  height: 65px;
+}
+
+@media (max-width:1043px){
+
+.menu_card {
+    max-width: 700px;
+}
+
+}
+
+@media (max-width:800px){
+
+.menu_card {
+    gap:10px;
+}
+
+}
+
+@media (max-width:745px){
+
+.menu_card {
+    max-width: 500px;
+}
+
+.foodCard {
+    width: 160px;
+    height: 140px;
+}
+
+.priceAndButton {
+    bottom: 10px;
+}
+
+}
+
+@media (max-width:560px){
+
+.menu_card {
+    max-width: 360px;
+}
+
+}
+
+@media (max-width:400px){
+
+.menu_card {
+    max-width: 300px;
+}
+
+.foodCard {
+    width: 120px;
+    height: 80px;
+}
+
+.priceAndButton {
+    bottom: 8px;
+}
+
+.foodTitle {
+    display: none;
+}
+
+.declineButton {
+    padding: 10px 20px;
+}
+
+.acceptButton {
+      padding: 10px 20px;  
+}
+
+}

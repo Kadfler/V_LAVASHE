@@ -1,0 +1,10 @@
+<div class="food_cards">
+                <div class="foodCard">
+                  <picture class="imageContainer">
+                    <img class="menu_img" src="ches.webp">
+                  </picture>
+                  <p class="foodTitle">sdsfdfdf</p>
+                  <footer class="priceAndButton">
+                    <p class="Price">$7.99</p>
+                  </footer>
+                </div>

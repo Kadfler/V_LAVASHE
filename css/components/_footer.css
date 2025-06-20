@@ -2,4 +2,129 @@
     background-color: #C37021;
     padding: 40px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_link {
+    background-color: #A24525;
+    border: #a13b19 3px solid;
+    padding: 5px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight:500;
+-webkit-box-shadow: 1px 13px 1px -5px rgba(202, 4, 0, 0.2);
+-moz-box-shadow: 1px 13px 1px -5px rgba(202, 4, 0, 0.2);
+box-shadow: 1px 13px 1px -5px rgba(202, 4, 0, 0.2);
+}
+
+.footer_link:hover {
+    background-color: #ff8b1e;;
+    border: #fa6800 3px solid;
+-webkit-box-shadow: 1px 1px 36px 7px rgba(255, 162, 0, 0.2);
+-moz-box-shadow: 1px 1px 36px 7px rgba(255, 162, 0, 0.2);
+box-shadow: 1px 1px 36px 7px rgba(255, 162, 0, 0.2);
+font-size: 32px;
+    transition: all 0.5s, font-size 0.2s;
+}
+
+
+.card {
+  display: flex;
+  height: 70px;
+  width: 270px;
+}
+
+.card svg {
+  position: absolute;
+  display: flex;
+  width: 60%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 50px;
+}
+
+.card svg {
+  transform: scale(1);
+}
+
+.card .social-link1:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link2:hover {
+  background-color: #0044ff;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link3:hover {
+  background-color: #12a50b;
+  animation: bounce_613 0.4s linear;
+}
+
+.mode {
+  display: flex;
+  flex-direction: column;
+}
+
+.mode_up {
+  font-size: 24px;
+  color: rgb(231, 216, 206);
+}
+
+.mode_down {
+  font-size: 24px;
+  color: azure;
+}
+
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width:584px) {
+  .footer {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 }

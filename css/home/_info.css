@@ -1,20 +1,27 @@
 .info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 .block_info {
-    display:flex;
-    gap:40px;
+    display: flex;
+    gap: 20px;
     justify-content: center;
-max-width: 1400px;
-margin-bottom:40px;
+    max-width: 1400px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 650px;
 }
 
 .info_img {
     border-radius: 70px;
+    object-fit: cover;
+    width:1400px;
+    height:370px
 }
 
 .inf_textes {
@@ -25,12 +32,10 @@ margin-bottom:40px;
 .inf_title {
     font-size: 44px;
     color: azure;
-    font-family:monospace;
 }
 
 .inf_text {
-   font-size: 24px;
+    font-size: 24px;
     color: azure;
-    font-family:monospace; 
     max-width: 739px;
 }

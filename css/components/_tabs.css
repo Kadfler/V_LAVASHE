@@ -4,9 +4,11 @@
     max-width: 1500px;
     width: 100%;
     border-radius: 50px;
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
     display: flex;
-    justify-content: space-between;
-    font-size: 48px;
+    justify-content: center;
+    font-size: 44px;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -14,16 +16,23 @@
     background-color: inherit;
     cursor: pointer;
     transition: 0.3s;
+    padding: 15px 60px;
+    color: azure;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+    transition: 0.6s;
+    border-bottom: 3px solid #ffc289;
+        color: rgb(243, 241, 187);
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
+    transition: 0.4s;
+    border-bottom: 3px solid #C37021;
+    font-size: 48px;
+    color: rgb(255, 140, 0);
 }
 
 /* Style the tab content */
@@ -35,6 +44,8 @@
     max-width: 1500px;
     width: 100%;
     background-color: #343131;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
 }
 
 .tabone {
@@ -46,4 +57,11 @@
 .tab_images {
     display: flex;
     justify-content: center;
+    gap: 30px
+}
+
+.tab_img:hover {
+    background-color: #c36f2195;
+    transition: 0.4s;
+    border-radius: 30px;
 }
