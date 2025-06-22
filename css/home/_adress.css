@@ -26,3 +26,8 @@
         align-items: center;
     justify-content: center;
 }
+
+.mapp {
+    width:640px;
+     height:380px;
+}

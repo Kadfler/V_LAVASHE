@@ -239,3 +239,47 @@ column-count: 2;
 }
 
 }
+
+@media (max-width: 960px) {
+  .adresses {
+    flex-direction: row;
+    gap: 10px;
+    max-width: 90vw;
+  }
+
+  .adress_text {
+    max-width: 350px;
+  }
+
+  .mapp {
+    width:240px;
+     height:200px;
+  }
+}
+
+@media (max-width: 599px) {
+  .adresses {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .adress_text {
+    align-items: center;
+    text-align: center;
+    max-width: 90vw;
+  }
+
+  .adress_text .title {
+    font-size: 20px;
+  }
+
+  .adress_text a.footer_link {
+    font-size: 14px;
+  }
+
+  .mapp {
+    width:300px;
+     height:100px;
+  }
+}
