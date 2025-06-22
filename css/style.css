@@ -5,6 +5,7 @@
 @import "components/_header.css";
 @import "home/_info.css";
 @import "components/_separates.css";
+@import "components/_swiper.css";
 @import "home/_menu.css";
 @import "components/_tabs.css";
 @import "home/_feedback.css";
@@ -12,3 +13,5 @@
 @import "components/_footer.css";
 @import "components/_modal.css";
 @import "components/_carusel.css";
+@import "components/_adapt.css";
+

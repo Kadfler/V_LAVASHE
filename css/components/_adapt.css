@@ -1,0 +1,45 @@
+@media (max-width: 600px) {
+  .tab_images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modopen {
+    max-width: 80vw;
+  }
+
+  .menu_card {
+    max-width: 90vw;
+    padding: 16px;
+  }
+
+  .food_cards {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .acceptButton,
+  .declineButton {
+    width: 100%;
+  }
+}
+
+/* Планшеты */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .tab_images {
+    justify-content: space-around;
+  }
+
+  .modopen {
+    max-width: 180px;
+  }
+
+  .menu_card {
+    max-width: 80vw;
+  }
+}
