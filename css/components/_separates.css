@@ -1,6 +1,7 @@
 .separs_info {
     display:flex;
-    width:100%;
+max-width: 100%;
+    height: auto;
     flex-direction: column;
     gap:25px;
     justify-content: center;
@@ -9,13 +10,11 @@
 }
 
 .separ_mini {
-    height: 6px;
-    width:507px;
-    object-fit: cover;
+max-width: 100%;
+    height: auto;
 }
 
 .separ_max {
-    height: 8px;
-    width:1400px;
-    object-fit: cover;
+max-width: 100%;
+    height: auto;
 }
