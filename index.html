@@ -96,117 +96,121 @@
     <img class="separ_max" src="images/separ2.svg">
   </div>
 
-    <div loop autoplay  style="object-fit: cover; padding: 5px">
-    <video class="banner_menu" src="images/videeo.webm" loop autoplay style="width: 100%; height:auto; max-height: 390px;">
-</div>
+  <div loop autoplay style="object-fit: cover; padding: 5px">
+    <video id="myvideo" class="banner_menu" src="images/videeo.webm" loop autoplay
+      style="width: 100%; height:auto; max-height: 390px;">
+  </div>
+  <script> document.getElementById('myvideo').play();  </script>
 
   <section class="menu" id="assort">
 
     <span class="title" style="margin-bottom: 40px;">Ассортимент</span>
 
-    <div class="tab" >
+    <div class="tab">
       <button class="tablinks" onclick="openMenu(event, 'adds')">ДОБАВКИ</button>
       <button class="tablinks" onclick="openMenu(event, 'food')">БЛЮДА</button>
       <button class="tablinks" onclick="openMenu(event, 'drinks')">ЗАКУСКИ</button>
     </div>
 
- <div id="adds" class="tabcontent">
-  <div class="tabone">
-
-    <div class="tab_images">
-
-      <button class="open-menu-btn" data-menu-type="cheese">
-        <img class="tab_img" src="images/cheese.png" style="height: 100px; width: 200px;">
-      </button>
-
-      <button class="open-menu-btn" data-menu-type="sauce">
-        <img class="tab_img" src="images/sous.png" style="height: 100px; width: 200px;">
-      </button>
-
-    </div>
-
-  </div>
-</div>
-
-
-<div class="menu_card" id="mainMenuModal">
-  <p class="cookieHeading" id="modalHeading">БЛЮДА</p>
-
-  <div class="food_cards" id="modalFoodCards">
-
-    <div class="foodCard">
-      <picture class="imageContainer">
-        <img class="menu_img" src="ches.webp" id="foodImg1">
-      </picture>
-      <p class="foodTitle" id="foodTitle1">Cheese Burguer</p>
-      <footer class="priceAndButton">
-        <p class="Price" id="foodPrice1">$7.99</p>
-      </footer>
-    </div>
-
-  </div>
-
-  <div class="buttonContainer">
-    <button class="acceptButton">
-      <a href="https://eda.yandex.ru/r/v_lavashe?placeSlug=v_lavashe_prdls" id="modalOrderLink">ЗАКАЗАТЬ</a>
-    </button>
-    <button class="declineButton close" id="closeMenuBtn">ЗАКРЫТЬ</button>
-  </div>
-</div>
-
-    <div id="food" class="tabcontent">
-<div class="tab_images"></div>
-<button class="open-menu-btn" data-menu-type="giros">
-  <img class="tab_img" src="images/gr.png" style="height: 100px; width: 200px;">
-</button>
-
-<button class="open-menu-btn" data-menu-type="burger">
-  <img class="tab_img" src="images/bgr.png" style="height: 100px; width: 200px;">
-</button>
-
-
-<button class="open-menu-btn" data-menu-type="desert">
-  <img class="tab_img" src="images/ds.png" style="height: 100px; width: 200px;">
-</button>
-
-
-<button class="open-menu-btn" data-menu-type="hach">
-  <img class="tab_img" src="images/hch.png" style="height: 100px; width: 200px;">
-</button>
-
-
-<button class="open-menu-btn" data-menu-type="sendvich">
-  <img class="tab_img" src="images/snd.png" style="height: 100px; width: 200px;">
-</button>
-
-<button class="open-menu-btn" data-menu-type="shaurma">
-  <img class="tab_img" src="images/sh.png" style="height: 100px; width: 200px;">
-</button>
-
-<button class="open-menu-btn" data-menu-type="pizza">
-  <img class="tab_img" src="images/pz.png" style="height: 100px; width: 200px;">
-</button>
-
-<button class="open-menu-btn" data-menu-type="hotdog">
-  <img class="tab_img" src="images/hd.png" style="height: 100px; width: 200px;">
-</button>
-
-<button class="open-menu-btn" data-menu-type="salads">
-  <img class="tab_img" src="images/sal.png" style="height: 100px; width: 200px;">
-</button>
-
-</div>
-    </div>
-
-    <div id="drinks" class="tabcontent" style="display: flex;
+    <div id="adds" class="tabcontent">
+      <div class="tabone" style="
     justify-content: center;">
 
-    <div class="tab_images">
+        <div class="tab_images">
 
-      <button class="open-menu-btn" data-menu-type="zakuski">
-  <img class="tab_img" src="images/sal.png" style="height: 100px; width: 200px;">
+          <button class="open-menu-btn" data-menu-type="cheese">
+            <img class="tab_img" src="images/cheese.png" style="height: 100px; width: 200px;">
+          </button>
 
-</button></div>
+          <button class="open-menu-btn" data-menu-type="sauce">
+            <img class="tab_img" src="images/sous.png" style="height: 100px; width: 200px;">
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="menu_card" id="mainMenuModal">
+      <p class="cookieHeading" id="modalHeading">БЛЮДА</p>
+
+      <div class="food_cards" id="modalFoodCards">
+
+        <div class="foodCard">
+          <picture class="imageContainer">
+            <img class="menu_img" src="ches.webp" id="foodImg1">
+          </picture>
+          <p class="foodTitle" id="foodTitle1">Cheese Burguer</p>
+          <footer class="priceAndButton">
+            <p class="Price" id="foodPrice1">$7.99</p>
+          </footer>
+        </div>
+
+      </div>
+
+      <div class="buttonContainer">
+        <button class="acceptButton">
+          <a href="https://eda.yandex.ru/r/v_lavashe?placeSlug=v_lavashe_prdls" id="modalOrderLink">ЗАКАЗАТЬ</a>
+        </button>
+        <button class="declineButton close" id="closeMenuBtn">ЗАКРЫТЬ</button>
+      </div>
+    </div>
+
+    <div id="food" class="tabcontent" style="
+    justify-content: center;">
+      <div class="tab_images"></div>
+      <button class="open-menu-btn" data-menu-type="giros">
+        <img class="tab_img" src="images/gr.png" style="height: 100px; width: 200px;">
+      </button>
+
+      <button class="open-menu-btn" data-menu-type="burger">
+        <img class="tab_img" src="images/bgr.png" style="height: 100px; width: 200px;">
+      </button>
+
+
+      <button class="open-menu-btn" data-menu-type="desert">
+        <img class="tab_img" src="images/ds.png" style="height: 100px; width: 200px;">
+      </button>
+
+
+      <button class="open-menu-btn" data-menu-type="hach">
+        <img class="tab_img" src="images/hch.png" style="height: 100px; width: 200px;">
+      </button>
+
+
+      <button class="open-menu-btn" data-menu-type="sendvich">
+        <img class="tab_img" src="images/snd.png" style="height: 100px; width: 200px;">
+      </button>
+
+      <button class="open-menu-btn" data-menu-type="shaurma">
+        <img class="tab_img" src="images/sh.png" style="height: 100px; width: 200px;">
+      </button>
+
+      <button class="open-menu-btn" data-menu-type="pizza">
+        <img class="tab_img" src="images/pz.png" style="height: 100px; width: 200px;">
+      </button>
+
+      <button class="open-menu-btn" data-menu-type="hotdog">
+        <img class="tab_img" src="images/hd.png" style="height: 100px; width: 200px;">
+      </button>
+
+      <button class="open-menu-btn" data-menu-type="salads">
+        <img class="tab_img" src="images/sal.png" style="height: 100px; width: 200px;">
+      </button>
+
+    </div>
+    </div>
+
+    <div id="drinks" class="tabcontent" style="
+    justify-content: center;">
+
+      <div class="tab_images">
+
+        <button class="open-menu-btn" data-menu-type="zakuski">
+          <img class="tab_img" src="images/sal.png" style="height: 100px; width: 200px;">
+
+        </button>
+      </div>
     </div>
 
   </section>
@@ -314,7 +318,7 @@
                 <p class="review-author">— Максим В.</p>
               </div>
             </li>
-            
+
             <li class="carousel-slide">
               <div class="review-block">
                 <p class="review-text">«Большая сочная шаурма, много мяса. Быстрое приготовление пищи, приятное
@@ -424,7 +428,8 @@
       <div class="adress_text">
         <span class="title">Номер телефона для связи:</span>
         <span class="title" style="margin-bottom: 20px; min-width: 243px;">+7 (918) 325-80-80</span>
-        <a class="footer_link" style="margin-bottom: 20px; color:azure" href="https://eda.yandex.ru/Giaginskaya?shippingType=delivery">Заказать онлайн </a>
+        <a class="footer_link" style="margin-bottom: 20px; color:azure"
+          href="https://eda.yandex.ru/Giaginskaya?shippingType=delivery">Заказать онлайн </a>
       </div>
 
       <div class="map">
@@ -445,9 +450,9 @@
   <section class="footer">
 
     <div class="mode">
-<p class="mode_up">Режим работы:</p>
-<p class="mode_down">ежедневно, 10:00–23:00</p>
-</div>
+      <p class="mode_up">Режим работы:</p>
+      <p class="mode_down">ежедневно, 10:00–23:00</p>
+    </div>
 
     <div class="card">
       <a class="social-link1" href="https://www.instagram.com/v_lavashe_fast_food_?igsh=MWp6ZmFpYWl5bjJvYw==">

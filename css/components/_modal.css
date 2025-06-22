@@ -1,4 +1,7 @@
 .menu_card {
+    overflow: auto;
+    left: 0;
+    top: 0;
     background-color: var(--light-blue);
     max-width: 1000px;
     width: 100%;
